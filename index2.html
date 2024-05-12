@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style2.css">
+    <link rel="stylesheet" href="./global.css">
+    <script defer type="text/javascript" src="./orderpage.js"></script>
+    <script defer type="text/javascript" src="./productslist.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cantata+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Botanical Jungle Order</title>
+</head>
+<body>
+    <header>
+        <a href = "index.html">
+            <img src="./img/logo.svg" alt="logo botanical jungle">
+        </a>
+        <h1>Podsumowanie</h1>
+    </header>
+    <hr>
+
+    <!-- steps -->
+    <section>
+        <ul class="steps">
+            <li><img src="./img/1.png" alt="number one">Koszyk</li>
+            <li><img src="./img/2.png" alt="number two"><div class="green-line">Podsumowanie</div></li>
+            <li><img src="./img/3.png" alt="numbre three"> Potwierdzenie</li>
+        </ul>
+    </section>
+
+    <main>
+    <!-- form -->
+        <section class="form-n-order">
+            <section class="recipient-data">
+                <h4>Dane odbiorcy</h4>
+                
+                    <form action="" method="">
+                    
+                        <label for="fullName">Imię i nazwisko<abbr class="required" title="required">*</abbr></label><br>
+                        <input type="text" id="fullName" placeholder="Imię i nazwisko" required><br>
+                        <span id="fullNameError" class="error"></span><br>
+        
+                        <label for="email">Adres e-mail<abbr class="required" title="required">*</abbr></label><br>
+                        <input type="email" id="email" placeholder="np. jan@gmail.com"  required><br>
+                        <span id="emailError" class="error"></span><br>
+        
+                        <label for="phone">Telefon<abbr class="required" title="required">*</abbr></label><br>
+                        <input type="text"  id="phone" placeholder="+48" required><br>
+                        <span id="phoneError" class="error"></span><br>
+        
+                        <label for="city">Miasto<abbr class="required" title="required">*</abbr></label><br>
+                        <input type="text"  id="city" placeholder="np. Warszawa" required><br>
+                        <span id="cityError" class="error"></span><br>
+                        
+                        <label for="delivery-address">Adres dostawy<abbr class="required" title="required">*</abbr></label><br>
+                        <input type="text" id="street" placeholder="np. Twarda 24/2" required><br>
+                        <span id="addressError" class="error"></span><br>
+            
+                        <label for="post-code">Kod pocztowy<abbr class="required" title="required">*</abbr></label><br>
+                        <input type="text" id="post-code" placeholder="np. 02-788" required><br>
+                        <span id="postcodeError" class="error"></span><br>
+
+                        <label for="data">Data dostawy:</label><br>
+                        <input type="date" id="data">
+
+                    </form>
+                    <button class="order-btn">Zamawiam</button>
+            </section>
+
+    <!-- Details -->
+
+            <section class="details">
+                <div class="details-head">
+                    <h4>Twoje zamówienie</h4>
+                    <div class="top-icons-right cart-icon">
+                        <i class="bi bi-cart-fill"></i>
+                        <span class="items-numer" id="items-number">0</span>
+                    </div>
+                </div>
+
+                <section class="details-inside">
+                    <div class="cart-itmes" id="cart-items">
+                        <hr>
+                    </div>
+
+                    <h3>Sposób doręczenia</h3>
+                    <div class="radio">
+                        <input type="radio" value="Dostawa" name="delivery-method">Dostawa<br>
+                        <input type="radio" value="Odbiór osobisty" name="delivery-method">Odbiór osobisty
+                    </div>
+                    <hr>
+
+                    <div class="delivery-date">
+                        <h3 class = "delivery-time-h3">Termin dostawy:</h3>
+                        <p class = "delivery-time-p" id="delivery-time">Wybierz</p>
+                    </div>
+                    <hr>
+                    <div class="total-cost" id="total-cost"></div>
+                </section>
+                <div class="buttons-section" id="buttons-section"></div>
+            </section>
+        </section>
+        
+    <!-- accessories -->
+        <h3 class="accessories">Akcesoria</h3>
+        <section class="offer" id="accessories"></section>
+
+    <!-- go back button -->
+        <button class="to-shop-btn"><a href="index.html">Wróć do sklepu</a></button>
+    </main>
+
+    <footer>
+        <img src="./img/logo no gb white.svg" alt="logo botanical jungle">
+        <section class="about-us">
+            <p>Starannie wyselekcjonowane z myślą o Tobie.
+                Oferujemy unikalne rośliny z tropikalnych rejonów na całym świecie.
+                Przywieziemy je pod Twoje drzwi, a dodatkowo udzielamy wsparcia w pielęgnacji.</p>
+            <ul class="social-media">
+                <li><a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a></li>
+                <li><a href="https://www.google.com/" target="_blank"><i class="bi bi-google"></i></a></li>
+                <li><a href="https://www.pinterest.com/" target="_blank"><i class="bi bi-pinterest"></i></a></li>
+                <li><a href="https://www.twitter.com/" target="_blank"><i class="bi bi-twitter"></i></a></li>
+            </ul>
+        </section>
+        <section class="details">
+            <ul>
+                <li><i class="bi bi-clock-fill"></i>GODZINY OTWARCIA<br>Pon. - Pt. 8.00-18.00<br>
+                    Sob. 10.00-16.00</li>
+                <li><i class="bi bi-geo-alt-fill"></i>ADRES<br>Marszałkowska 102/7<br>Warszawa 02-754</li>
+                <li><i class="bi bi-telephone-fill"></i>KONTAKT<br>+48 563 848 413</li>
+            </ul>
+        </section>
+        <section class="links">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="bi bi-chevron-right"></i>Rośliny
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="bi bi-chevron-right"></i>Akcesoria
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="bi bi-chevron-right"></i>Doniczki
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="bi bi-chevron-right"></i>Bestsellery
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="bi bi-chevron-right"></i>Blog
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="bi bi-chevron-right"></i>Kontakt
+                    </a>
+                </li>
+            </ul>
+            <ul></ul>
+        </section>
+        <section class="links">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="bi bi-chevron-right"></i>Polityka prywatności
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="bi bi-chevron-right"></i>Regulamin sklepu
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="bi bi-chevron-right"></i>Cookies
+                    </a>
+                </li>
+            </ul>
+            <ul></ul>
+        </section>
+    </footer>
+</body>
+</html>

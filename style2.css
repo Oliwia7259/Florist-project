@@ -1,0 +1,179 @@
+
+header {
+    align-items: center;
+}
+
+/* form and details sections */
+.form-n-order {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 100px 18px 100px;
+}
+
+.form-n-order h4 {
+    font-weight: 500;
+    font-size: 18px;
+    margin: 64px 0 18px 0;
+    gap: 20px;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    position: absolute;
+    margin: -3px 0 0 0;
+}
+
+/* main sections*/
+
+form, .details-inside {
+    border: 1px solid #898989;
+    border-radius: 8px;
+    padding: 24px;
+}
+
+.details-inside img{
+    width: 90px;
+}
+
+.recipient-data {
+    display: flex;
+    flex-direction: column;
+}
+
+.recipient-data h4, .order-btn, .details h4 {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.order-btn {
+    margin: 18px 170px;
+}
+
+.details-inside h3 {
+    font-size: 16px;
+    margin: 6px 0;
+    font-weight: 300;
+}
+
+.recipient-data label {
+    font-size: 16px;
+    margin-top: 24px;
+    font-weight: 300;
+    position: relative;
+}
+
+ .delivery-date, .total-cost{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.recipient-data input {
+    font-size: 14px;
+    font-family: "Cantata One", serif;
+    padding: 6px 12px;
+    border-radius: 8px;
+    margin: 6px 12px 5px 0;
+    border: 1px solid #898989;
+    background-color: ghostwhite;
+    color: #a3a3a397;
+    width: 500px;
+}
+
+.recipient-data input::placeholder-shown {
+    color: #a3a3a397;
+}
+
+.recipient-data input:not(:placeholder-shown) {
+    color: black;
+}
+
+abbr {
+    color: red;
+    text-decoration: none;
+}
+
+/* details section */
+.details {
+    width: 400px;
+}
+
+.details-head{
+    position: relative;
+}
+
+.cart-icon {
+    width: 60px;
+    position: absolute;
+    top:15px;
+}
+
+/* Cart-orederPage */
+.cart-item {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    justify-content: space-between;
+    margin: 0 0 24px 0;
+    gap: 10px;
+}
+
+.remove {
+    width: 90px;
+    height: 35px;
+    font-size: 14px;
+    min-width: 90px;
+}
+
+.details-inside .radio{
+    font-size: 14px;
+}
+
+.delivery-date .delivery-time-h3, .delivery-time-p {
+    margin: 0;
+}
+
+.cart-item input {
+    width: 30px;
+    border: 1px solid #898989;
+    border-radius: 8px;
+    padding: 7px;
+}
+
+.delivery-date {
+    align-items: center;
+}
+
+.total-cost {
+    display: flex;
+    align-items: center;
+}
+
+.total-cost h3 {
+    margin: 0;
+}
+
+.total-cost-p {
+    margin: 0;
+}
+
+/* Back button */
+.to-shop-btn{
+    margin: 0px 64px 64px 100px;
+}
+
+/* accessories */
+.accessories {
+    font-weight: 500;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    margin: 64px 0 0 0;
+}
+
+.offer {
+    margin: 0 0 64px 0;
+    gap: 10px;
+}
